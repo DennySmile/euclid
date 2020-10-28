@@ -1048,10 +1048,10 @@ button:focus {
     padding-top: 18px;
   }
   .how__left-col {
-    margin-top: 0;
+    margin-top: 24px;
   }
   .how__right-col {
-    height: 178px;
+    height: 155px;
     background-size: 100%;
   }
   .content__title {
