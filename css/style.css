@@ -799,6 +799,9 @@ button:focus {
   .how__list {
     justify-content: space-between;
   }
+  .how__step:not(:last-child) {
+    margin-right: 0;
+  }
   .how__content {
     flex-direction: column-reverse;
     padding-top: 48px;
@@ -842,5 +845,299 @@ button:focus {
   .footer__second-col {
     width: 100%;
     max-width: 535px;
+  }
+}
+
+@media (max-width: 560px) {
+  .container {
+    padding: 0 15px;
+  }
+  .header__logo {
+    margin-left: 0;
+  }
+  .header__logo_img {
+    transform: none;
+  }
+  .header__search {
+    display: none;
+  }
+  .burger {
+    order: 0;
+  }
+  .hero__background {
+    padding: 70px 21px;
+  }
+  .hero__title {
+    text-align: center;
+    font-size: 46px;
+    line-height: 1.5;
+  }
+  .hero__descr {
+    text-align: center;
+    font-size: 16px;
+  }
+  .hero__btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer-container:first-child {
+    align-items: center;
+  }
+  .footer__first-col {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 36px;
+  }
+  .hero__btn {
+    margin-top: 80px;
+  }
+  .about__card {
+    display: block;
+  }
+  .about__card {
+    padding: 0;
+    border: none;
+  }
+  .card__pic {
+    width: 20%;
+    background-size: contain;
+    background-position: left;
+  }
+  .card__text {
+    max-width: 100%;
+    margin: 0;
+    margin-top: 25px;
+  }
+  .card__title {
+    font-size: 18px;
+  }
+  .card__descr {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .faq__item {
+    font-weight: 500;
+  }
+  .request__title {
+    font-size: 36px;
+  }
+  .request__submit {
+    flex-direction: column;
+  }
+  .request__submit_checkbox {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .header {
+    height: 44px;
+  }
+  .header__logo_img {
+    width: 97px;
+  }
+  .burger {
+    width: 25px;
+    height: 19px;
+  }
+  .hero__background {
+    padding: 33px 21px;
+    min-height: 150px;
+    height: 263px;
+  }
+  .hero__title {
+    font-size: 20px;
+    line-height: 24.38px;
+  }
+  .hero__descr {
+    margin-top: 7px;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 500;
+    letter-spacing: 0.15px;
+  }
+  .hero__btn {
+    padding: 14px 29px;
+    font-size: 12px;
+    margin-top: 35px;
+  }
+  .about {
+    margin-top: 39px;
+  }
+  .about__content {
+    margin-top: 11px;
+  }
+  .about__descr {
+    margin-top: 2px;
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .about-banner {
+    width: 290px;
+    min-height: 399px;
+    background-size: contain;
+    background-position: top;
+  }
+  .about-banner__more {
+    flex-direction: column;
+    padding: 0;
+    background: none;
+    backdrop-filter: none;
+  }
+  .about-banner__descr {
+    margin-bottom: 11px;
+    font-size: 14px;
+    line-height: 28px;
+    color: #333333;
+    font-weight: normal;
+  }
+  .about-banner__btn {
+    align-self: start;
+    padding: 11px 42px;
+    font-size: 12px;
+    color: #FF9900;
+  }
+  .about-banner__btn:hover {
+    transition: background-color .2s ease-in;
+    background-color: #FF9900;
+    color: #fff;
+  }
+  .about__col:not(:last-child) {
+    margin-bottom: 36px;
+  }
+  .about__card:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .card__pic {
+    min-height: 56px;
+  }
+  .card__text {
+    margin-top: 12px;
+  }
+  .card__title {
+    line-height: 22px;
+  }
+  .card__descr {
+    margin-top: 4px;
+  }
+  .how {
+    margin-top: 46px;
+  }
+  .how__title {
+    margin-left: 0;
+}
+  .how__list {
+    margin-top: 36px;
+  }
+  .how__step {
+    font-size: 14px;
+  }
+  .how__content {
+    padding-top: 18px;
+  }
+  .how__left-col {
+    margin-top: 0;
+  }
+  .how__right-col {
+    height: 178px;
+    background-size: 300px;
+  }
+  .content__title {
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .content__descr {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .content__btns {
+    margin-top: 20px;
+  }
+  .how__btn {
+    margin-right: 9px;
+    padding: 12px 45px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .offer__link {
+    padding: 12px 31px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .faq {
+    margin-top: 39px;
+  }
+  .faq__title {
+    margin-left: 0;
+}
+  .faq__list {
+    margin-top: 14px;
+  }
+  .faq__item {
+    padding-top: 20px;
+    padding-bottom: 23px;
+  }
+  .faq__item_text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .plus {
+    width: 30px;
+    height: 30px;
+  }
+  .plus::before {
+    width: 20px;
+  }
+  .plus::after {
+    height: 20px;
+  }
+  .footer {
+    margin-top: 39px;
+    padding-top: 15px;
+  }
+  .footer__logo img {
+    width: 131px;
+  }
+  .footer__first-col {
+    margin-top: 56px;
+  }
+  .social__link {
+    width: 34.4px;
+    height: 34.4px;
+    background-size: contain;
+  }
+  .request__title {
+    margin-bottom: 5px;
+    font-size: 24px;
+  }
+  .request__input::placeholder {
+    padding-left: 20px;
+    font-size: 14px;
+  }
+  .request__submit {
+    margin-top: 0;
+  }
+  .request__btn {
+    padding: 14px 29px;
+    font-size: 12px;
+  }
+  .request__submit_checkbox {
+    margin-top: 19px;
+  }
+  .social__item:not(:last-child) {
+    margin-right: 14px;
   }
 }
