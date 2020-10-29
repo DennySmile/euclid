@@ -34,7 +34,7 @@
           </li>
         </ul>
       </nav>
-      <button class="header__search"></button>
+      <button aria-label="Поиск" class="header__search"></button>
       <button class="burger"></button>
     </div>
   </header>
@@ -200,24 +200,23 @@
         </ul>
 
         <ul class="footer__social">
-          <li class="social__item">
-            <a href="#" class="social__link social__facebook"></a>
+          <li class="social__item" >
+            <a href="#" class="social__link social__facebook" aria-label="Facebook"></a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link social__vk"></a>
+            <a href="#" class="social__link social__vk" aria-label="В Конткте"></a>
           </li>
           <li class="social__item">
-            <a href="#" class="social__link social__instagram"></a>
+            <a href="#" class="social__link social__instagram" aria-label="Instagram"></a>
           </li>
         </ul>
       </div>
       <div class="footer__second-col">
         <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="footer__request">
           <h2 class="request__title">Оставить заявку</h2>
-          <input type="text" name="name" placeholder="Фамилия, имя и отчество*" required class="request__input">
-          <input type="email" name="email" placeholder="E-mail*" required class="request__input">
-          <textarea name="message" id="message" cols="30" rows="10" placeholder="Сообщение"
-            class="request__input request__input_message"></textarea>
+          <input type="text" name="name" placeholder="Фамилия, имя и отчество*" required class="request__input" aria-label="Введите Фамилию, имя и отчество">
+          <input type="email" name="email" placeholder="E-mail*" required class="request__input" aria-label="Введите email">
+          <textarea name="message" id="message" cols="30" rows="10" placeholder="Сообщение" class="request__input request__input_message" aria-label="Введите ваше сообщение"></textarea>
           <div class="request__submit">
             <button type="submit" class="request__btn btn">Отправить данные</button>
             <div class="request__submit_checkbox">
