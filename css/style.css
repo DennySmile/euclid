@@ -168,11 +168,64 @@ button:focus {
   cursor: pointer;
 }
 
+.tablet-menu {
+  position: absolute;
+  top: auto;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  background-color: white;
+  transition: transform .3s ease-in-out;
+  transform: translateY(-120%);
+}
+
+.tablet-menu__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tablet-menu__item {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.tablet-menu__link {
+  display: block;
+  font-size: 36px;
+  font-weight: 600;
+  color: #333333;
+  cursor: pointer;
+}
+
+.is-active {
+  transform: none;
+}
+
 .hero__background {
   padding-left: 79px;
   padding-top: 103px;
   min-height: 620px;
+  z-index: -1;
+}
+
+.hero__background-1 {
   background: url(../img/hero.jpg) center center/cover no-repeat;
+}
+
+.hero__background-2 {
+  background: url(../img/hero2.jpg) center center/cover no-repeat;
+}
+
+.hero__background-3 {
+  background: url(../img/hero3.jpg) center center/cover no-repeat;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
 }
 
 .hero__title {
@@ -415,9 +468,9 @@ button:focus {
 }
 
 .faq__item {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
   padding-top: 30px;
   padding-bottom: 33px;
@@ -438,7 +491,21 @@ button:focus {
   transition: color .2s ease-in;
 }
 
+.faq__item_descr {
+  line-height: 32px;
+}
+
+.faq__item_descr p {
+  width: 56%;
+}
+
+.faq__item_descr p span {
+  padding: 31px 0px 40px;
+}
+
 .plus {
+  position: absolute;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -624,6 +691,24 @@ button:focus {
   color: #CACACA;
 }
 
+.swiper-container {
+  z-index: 1 !important;
+}
+
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.4) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #FFFFFF !important;
+}
+
+.swiper-pagination-bullet-active:hover, .swiper-pagination-bullet-active:focus {
+  background: rgba(255, 255, 255, 0.4) !important;
+  border: 1px solid #FFFFFF !important;
+  box-sizing: border-box !important;
+}
+
 @media (max-width: 1024px) {
   .container {
     padding: 0 50px;
@@ -738,6 +823,9 @@ button:focus {
   }
   .faq__item_text {
     width: 84%;
+  }
+  .faq__item_descr p {
+    width: 100%;
   }
   .footer {
     margin-top: 59px;
@@ -986,7 +1074,7 @@ button:focus {
   }
   .about-banner {
     width: 100%;
-    min-height: 399px;
+    min-height: 420px;
     background-size: contain;
     background-position: top;
   }
@@ -1037,7 +1125,7 @@ button:focus {
   }
   .how__title {
     margin-left: 0;
-}
+  }
   .how__list {
     margin-top: 36px;
   }
@@ -1082,7 +1170,7 @@ button:focus {
   }
   .faq__title {
     margin-left: 0;
-}
+  }
   .faq__list {
     margin-top: 14px;
   }
@@ -1093,6 +1181,9 @@ button:focus {
   .faq__item_text {
     font-size: 14px;
     line-height: 24px;
+  }
+  .faq__item_descr p {
+    font-size: 12px;
   }
   .plus {
     width: 30px;
