@@ -43,6 +43,10 @@
       <button id="burger" class="burger" tabindex="8"></button>
     </div>
     <div id="tablet-menu" class="tablet-menu">
+      <a id="close" href="#" class="close">
+        <span></span>
+        <span></span>
+      </a>
       <ul class="tablet-menu__list">
         <li class="tablet-menu__item">
           <a href="#about" class="tablet-menu__link">О нас</a>
@@ -214,7 +218,9 @@
           исключительно положительном свете.
         </p>
       </div>
-      <h3 class="faq__item" tabindex="18"><div class="faq__item_text">У меня есть свой проект. Сможем ли мы его доработать / реализовать?</div> <div class="plus"></div>
+      <h3 class="faq__item" tabindex="18">
+        <div class="faq__item_text">У меня есть свой проект. Сможем ли мы его доработать / реализовать?</div>
+        <div class="plus"></div>
       </h3>
       <div class="faq__item_descr">
         <p>
@@ -224,8 +230,9 @@
           suscipit faucibus urna.
         </p>
       </div>
-      <h3 class="faq__item" tabindex="19"><div class="faq__item_text">Я выбираю между разными компаниями. В&#160;чём ваше отличие? </div><div
-          class="plus"></div>
+      <h3 class="faq__item" tabindex="19">
+        <div class="faq__item_text">Я выбираю между разными компаниями. В&#160;чём ваше отличие? </div>
+        <div class="plus"></div>
       </h3>
       <div class="faq__item_descr">
         <p>
@@ -235,7 +242,8 @@
           lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
         </p>
       </div>
-      <h3 class="faq__item" tabindex="20"><div class="faq__item_text">Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?</div>
+      <h3 class="faq__item" tabindex="20">
+        <div class="faq__item_text">Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?</div>
         <div class="plus"></div>
       </h3>
       <div class="faq__item_descr">
@@ -245,7 +253,9 @@
           aperiam neque quaerat?
         </p>
       </div>
-      <h3 class="faq__item" tabindex="21"><div class="faq__item_text">Могу ли я вернуть деньги на каком-либо из этапов работ?</div> <div class="plus">
+      <h3 class="faq__item" tabindex="21">
+        <div class="faq__item_text">Могу ли я вернуть деньги на каком-либо из этапов работ?</div>
+        <div class="plus">
         </div>
       </h3>
       <div class="faq__item_descr">
@@ -346,18 +356,24 @@
       },
     });
 
-    $( function() {
-    $( "#accordion" ).accordion({
-      heightStyle: "content",
-      collapsible: true
+    $(function () {
+      $("#accordion").accordion({
+        heightStyle: "content",
+        collapsible: true
+      });
     });
-  } );
-  window.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('#burger').addEventListener('click', function() {
-      document.querySelector('#tablet-menu').classList.toggle('is-active')
-    })
-  })
-  
+    window.addEventListener('DOMContentLoaded', function () {
+      document.querySelector('#burger').addEventListener('click', function () {
+        document.querySelector('#tablet-menu').classList.add('is-active');
+      });
+      document.querySelector('#close').addEventListener('click', function () {
+        document.querySelector('#tablet-menu').classList.remove('is-active');
+      });
+      document.querySelector('.tablet-menu__link').addEventListener('click', function () {
+        document.querySelector('#tablet-menu').classList.remove('is-active');
+        });
+    });
+ 
   </script>
 </body>
 
